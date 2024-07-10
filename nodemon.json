@@ -1,0 +1,14 @@
+{
+  "watch": [
+    "index.js",
+    "config.js",
+    "src/",
+    "./config.js"
+  ],
+  "ignore": [
+    "*.test.js",
+    "**/*.test.js"
+  ],
+  "ext": "js, css",
+  "delay": 3500
+}
