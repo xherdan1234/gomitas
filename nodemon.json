@@ -1,0 +1,14 @@
+{
+  "watch": [
+    "index.ts",
+    "src/",
+    "config.ts",
+    ".babelrc"
+  ],
+  "ignore": [
+    "*.test.ts",
+    "**/*.test.ts"
+  ],
+  "ext": "js, css, ts",
+  "delay": 1500
+}

@@ -1,0 +1,43 @@
+{
+  "comments": false,
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "loose": true,
+        "shippedProposals": true
+      }
+    ],
+    "@babel/preset-typescript"
+  ],
+  "sourceRoot": "../src",
+  "sourceMaps": "inline",
+  "plugins": [
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true,
+        "shippedProposals": true
+      }
+    ],
+    "@babel/plugin-proposal-object-rest-spread",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "root": "./src/",
+          "app": "./src/app",
+          "commands": "./src/commands",
+          "utils": "./src/utils",
+          "config": "./config.js",
+          "ririkoBot": "./src/ririkoBot.js",
+          "languages": "./languages",
+          "tools": "./src/tools",
+          "assets": "./assets",
+          "helpers": "./src/helpers",
+          "handlers": "./src/handlers/"
+        }
+      }
+    ]
+  ]
+}

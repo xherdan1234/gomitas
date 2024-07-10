@@ -1,0 +1,77 @@
+{
+  "ts-node": {
+    "swc": true
+  },
+  "compilerOptions": {
+    "lib": [
+      "es5",
+      "es6",
+      "dom"
+    ],
+    "target": "es5",
+    "composite": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "checkJs": false,
+    "noImplicitAny": false,
+    "strict": false,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "allowJs": true,
+    "moduleDetection": "force",
+    "paths": {
+
+      "app/*": [
+        "./src/app/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ],
+      "config": [
+        "./config.ts"
+      ],
+      "ririkoBot": [
+        "./src/ririkoBot.ts"
+      ],
+      "commands/*": [
+        "./src/commands/*"
+      ],
+      "utils/*": [
+        "./src/utils/*"
+      ],
+      "languages/*": [
+        "./languages/*"
+      ],
+      "tools/*": [
+        "./src/tools/*"
+      ],
+      "assets/*": [
+        "./src/assets/*"
+      ],
+      "helpers/*": [
+        "./src/helpers/*"
+      ],
+      "@helpers/*": [
+        "./src/helpers/*"
+      ],
+      "handlers/*": [
+        "./src/handlers/*"
+      ]
+    },
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src/**/*",
+    "index.ts",
+    "languages/*",
+    "config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/**/*.test.ts",
+    "src/**/*.spec.ts"
+  ]
+}
