@@ -1,0 +1,29 @@
+{
+  "comments": false,
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "sourceRoot": "../src",
+  "sourceMaps": "inline",
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-object-rest-spread",
+    "source-map-support",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "app": "./dist/app",
+          "utils": "./dist/utils",
+          "config": "./config.js",
+          "ririko": "./dist/ririko.js",
+          "languages" :"./languages",
+          "tools": "./dist/tools",
+          "assets": "./assets",
+          "helpers": "./dist/helpers",
+          "handlers": "./dist/handlers/"
+        }
+      }
+    ]
+  ]
+}
